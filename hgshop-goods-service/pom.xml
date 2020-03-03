@@ -6,7 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>hgshop-goods-service</artifactId>
-  <packaging>war</packaging>
+  <packaging>war</packaging> 
 
 <dependencies>
 		<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->

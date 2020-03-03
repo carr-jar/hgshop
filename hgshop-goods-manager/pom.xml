@@ -7,7 +7,7 @@
   </parent>
   <artifactId>hgshop-goods-manager</artifactId>
   <packaging>war</packaging>
-<dependencies>
+<dependencies> 
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper</artifactId>

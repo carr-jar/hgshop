@@ -9,5 +9,5 @@ public interface UserMapper {
 
 	@Select("SELECT * FROM hg_user u WHERE u.`username`=#{userName} AND u.`password`=#{passWord}")
 	User login(@Param("userName")String userName,@Param("passWord")String passWord);
-	
+	 
 }

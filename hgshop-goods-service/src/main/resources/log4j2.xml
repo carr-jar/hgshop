@@ -5,7 +5,7 @@
         </Console>
     </Appenders>
     <Loggers>
-        <Logger name="org.apache.zookeeper" level="ERROR"/>
+        <Logger name="org.apache.zookeeper" level="ERROR"/> 
         <Root level="error">
             <AppenderRef ref="Console"/>
         </Root>

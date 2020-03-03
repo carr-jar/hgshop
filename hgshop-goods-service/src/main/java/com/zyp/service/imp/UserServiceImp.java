@@ -11,7 +11,7 @@ import com.zyp.service.UserService;
 public class UserServiceImp implements UserService{
 
 	@Autowired
-	UserMapper mapper;
+	UserMapper mapper; 
 	@Override
 	public User login(String userName, String passWord) {
 		// TODO Auto-generated method stub

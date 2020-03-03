@@ -13,7 +13,7 @@ public class GoodsServiceImp  implements GoodsService{
 	@Override
 	public int addBrand(Brand brand) {
 		// TODO Auto-generated method stub
-		return 0;
+		return 0; 
 	}
 
 	@Override

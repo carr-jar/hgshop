@@ -8,7 +8,7 @@ import com.zyp.bean.User;
 import com.zyp.service.UserService;
 
 @Controller
-public class UserController {
+public class UserController { 
 	
 	
 	@Reference(timeout=2000,version="1.0.0")
