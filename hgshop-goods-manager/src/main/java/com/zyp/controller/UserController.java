@@ -22,8 +22,8 @@ public class UserController {
 	
 	@RequestMapping("login")
 	public String login(String name,String password ) {
-		User user = userService.login(name, password);
-		if(user!=null)
+		
+		if(userService.login(name, password))
 			return "redirect:/";
 		else {
 			return "login";

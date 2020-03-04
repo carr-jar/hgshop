@@ -82,6 +82,10 @@ public class Brand implements Serializable{
 	public String toString() {
 		return "Brand [id=" + id + ", name=" + name + ", firstChar=" + firstChar + ", deletedFlag=" + deletedFlag + "]";
 	}
+	public Brand() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
      
 	
                                 

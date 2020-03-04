@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyp.mapper.BrandMapper">
+	<resultMap type="com.zyp.bean.Brand" id="bb">
+		<id property="id" column="id"/>
+		<result property="firstChar" column="first_char"/>
+		<result property="deletedFlag" column="deleted_flag"/>
+	</resultMap>
+	<select id="list" resultMap="bb">
+		select * from hg_brand
+	</select>
+</mapper>

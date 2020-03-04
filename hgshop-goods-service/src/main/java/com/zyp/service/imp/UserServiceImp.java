@@ -4,6 +4,7 @@ import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.zyp.bean.User;
+import com.zyp.config.AdminProperties;
 import com.zyp.mapper.UserMapper;
 import com.zyp.service.UserService;
 
@@ -11,11 +12,15 @@ import com.zyp.service.UserService;
 public class UserServiceImp implements UserService{
 
 	@Autowired
-	UserMapper mapper; 
+	UserMapper mapper;
+	// 得到管理员的信息
+	@Autowired
+	AdminProperties adminPro;
 	@Override
-	public User login(String userName, String passWord) {
+	public Boolean login(String userName, String passWord) {
 		// TODO Auto-generated method stub
-		return mapper.login(userName,passWord);
+	  return (adminPro.getAdminName().equals(userName) 
+				&& adminPro.getPassword().equals(passWord));
 		
 	}
 
