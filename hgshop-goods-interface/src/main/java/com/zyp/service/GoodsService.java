@@ -5,12 +5,17 @@ import java.util.List;
 import com.github.pagehelper.PageInfo;
 import com.zyp.bean.Brand;
 import com.zyp.bean.Category;
+import com.zyp.bean.Sku;
+import com.zyp.bean.Spu;
+import com.zyp.bean.SpuVo;
 
 /**
- * Dubbo 服务接口函数比要有非Void 的返回值 
+ *  
+ *  **** Dubbo 服务接口函数比要有非Void 的返回值********
+ *   
  */
-public interface GoodsService {  
-	 
+public interface GoodsService { 
+	
 	int addBrand(Brand brand);
 	int updateBrand(Brand brand);
 	int deleteBrand(Integer id);
@@ -39,6 +44,22 @@ public interface GoodsService {
 	 */
 	List<Category> treeCategory(); 
 	
+	// spu的管理
+	PageInfo<Spu>  listSpu(int page,SpuVo vo);
+	int addSpu(Spu spu);
+	int updateSpu(Spu spu);
+	int deleteSpu(int id);
+	int deleteSpuBatch(int[] id);
+	Spu getSpu(int id);
 	
+	List<Brand> getAllBrands();
+	
+	// sku的管理
+	PageInfo<Sku>  listSku(int page,Sku sku);
+	int addSku(Sku sku);
+	Sku getSku(int id);//获取详情
+	int updateSku(Sku sku);
+	int deleteSku(int id);
+	int deleteSkuBatch(int[] id);
 
 }

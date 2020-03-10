@@ -16,7 +16,10 @@ public class SpecOption implements Serializable {
 	private String optionName;
 	private int specId;
 	private int orders=0;
-	
+	/**
+	 * 属性名称
+	 */
+	private String specName;
 	
 	@Override
 	public int hashCode() {
@@ -45,6 +48,13 @@ public class SpecOption implements Serializable {
 	public String toString() {
 		return "SpecOption [id=" + id + ", optionName=" + optionName + ", specId=" + specId + ", orders=" + orders
 				+ "]";
+	}
+	
+	public String getSpecName() {
+		return specName;
+	}
+	public void setSpecName(String specName) {
+		this.specName = specName;
 	}
 	public Integer getId() {
 		return id;

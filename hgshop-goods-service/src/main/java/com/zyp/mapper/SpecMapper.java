@@ -26,4 +26,6 @@ public interface SpecMapper {
 
 	int deleteSpecBatch(int[] ids);
 
+	List<Spec> listAll();
+
 }

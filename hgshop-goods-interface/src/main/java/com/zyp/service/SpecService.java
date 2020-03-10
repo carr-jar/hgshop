@@ -1,5 +1,7 @@
 package com.zyp.service;
 
+import java.util.List;
+
 import com.github.pagehelper.PageInfo;
 import com.zyp.bean.Spec;
 
@@ -29,7 +31,7 @@ public interface SpecService {
 	 */
 	int deleteBatch(int[] id);
 	
-	
+	List<Spec> listAll();
 	
 	
 	
